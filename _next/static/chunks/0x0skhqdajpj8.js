@@ -1,0 +1,1 @@
+(globalThis.TURBOPACK||(globalThis.TURBOPACK=[])).push(["object"==typeof document?document.currentScript:void 0,12483,e=>{"use strict";var t=e.i(43476),l=e.i(48010),o=e.i(39584);e.s(["default",0,function({children:e}){return(0,t.jsx)(l.ProtectedRoute,{allowedRoles:["COMPANY_ADMIN","PLATFORM_ADMIN"],children:(0,t.jsx)(o.AppShell,{defaultRole:"COMPANY_ADMIN",children:e})})}])}]);
