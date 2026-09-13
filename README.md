@@ -1,0 +1,73 @@
+# SITE2SCHEDULE AI — Planning-to-Execution Intelligence
+
+> **Smart India Hackathon 2026 (SIH26122) National Prototype**  
+> Bridging planned Level 1–Level 6 Work Breakdown Structure (WBS) schedules with real-world site execution using geotagged evidence, automated AI verification, and government monitoring compliance.
+
+🌐 **Live Demo on GitHub Pages**: [https://aswini040924-creator.github.io/intelligencereport/](https://aswini040924-creator.github.io/intelligencereport/)
+
+---
+
+## 🚀 Key Highlights & 3-Tier Architecture
+
+1. **Tier 1: Site Manager (Mobile Field Capture)**
+   - Capture live field evidence (photos, GPS coordinates, timestamps, voice memos).
+   - Report daily progress percentage and physical quantities (e.g., joints completed, meters pipe laid).
+   - Original field submissions are permanently logged and never overwritten.
+
+2. **Tier 2: Project Manager (AI Verification & EVM Schedule Update)**
+   - Review AI match confidence against Level 5/Level 6 work packages.
+   - Validate physical progress (dual-tracking `reportedProgress` vs `validatedProgress`).
+   - Mathematically aggregate validated progress from L6 up to L1 master schedules.
+
+3. **Tier 3: Government Officer (Transparency & Compliance Monitoring)**
+   - Real-time visibility into Earned Value Metrics (EVM), schedule variance, and overdue tasks.
+   - Milestone approval workflows with full audit trails.
+   - Read-only governance tier ensuring contractual baseline integrity.
+
+---
+
+## 🔑 Demo Access Credentials
+
+| Role | Portal URL | Demo Access Code |
+| :--- | :--- | :--- |
+| **Site Manager** | `/enterprise/site-manager/dashboard` | `SM-X72K91AB` |
+| **Project Manager** | `/enterprise/project-manager/dashboard` | `PM-A82LQ4P7` |
+| **Company Admin** | `/enterprise/company-admin/dashboard` | `ADM-C91X2B74` |
+| **Government Officer** | `/gov/dashboard` | `GOV-7F4K9M21` |
+| **Super Admin** | `/admin/dashboard` | `SYS-S84K9L12` |
+
+---
+
+## 🛠️ Getting Started Locally
+
+```bash
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+### Production Static Build
+
+```bash
+# Build static export for GitHub Pages
+npm run build
+```
+
+Static output is generated in the `out/` directory with `basePath: '/intelligencereport'`.
+
+---
+
+## 🌐 GitHub Pages Deployment
+
+The repository includes a GitHub Actions workflow (`.github/workflows/deploy.yml`) configured for automated deployment to GitHub Pages.
+
+### To enable GitHub Pages:
+1. Go to repository **Settings** → **Pages**.
+2. Under **Build and deployment**:
+   - Set **Source** to **GitHub Actions** (recommended).  
+   *OR*
+   - Set **Source** to **Deploy from a branch** and select the **`gh-pages`** branch.
